@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Display&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;1,100&display=swap');
+       
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Lato", sans-serif;
+        }
+        .outer{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to left top, #0ad3c1, #00ccef, #46beff, #a8a9fe, #e292d6);        
+        }
+
+        .inner{
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px 40px;
+            background:linear-gradient(to top left,#ffffffff,#ffffff33);
+            backdrop-filter:blur(8px);
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px  rgb(6, 18, 28);
+            z-index: 2;
+        }
+        .sign-up-header  h1{
+            font-size: 2.5rem;
+            color: #212121;
+        }
+        .sign-up-header p{
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        .signup-body{
+            margin: 20px 0;
+        }
+
+        .signup-body p{
+            margin: 10px 0 ;
+
+        }
+
+        .signup-body p label{
+            display: block;
+            font-weight: bold;
+        }
+        .signup-body p input{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        .signup-body p input[type="submit"]{
+            background-color: rgb(0, 133, 211);
+            border: none;
+            color: white ;
+            cursor: pointer;
+        }
+        .signup-body p input[type="submit"]:hover{
+
+            background-color: rgb(33, 96, 145);
+        }
+        .signup-footer p{
+             color: #555;
+             text-align: center;
+        }
+        .signup-footer p a{
+            color: rgb(33, 96, 145) ;
+
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: linear-gradient(to top right,#ffffff33,#ffffffff);
+            position: absolute;
+        }
+        .c1{
+            top: 100px;
+            left: 40px;
+        }
+        .c2{
+            bottom: 100px;
+            right: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="outer">
+    <div class="inner">
+        <header class="sign-up-header">
+            <h1>Signup</h1>
+            <p>Its just takes 30 second</p>
+        </header>
+        <main class="signup-body">
+            <form action="#">
+                <p>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                </p>
+                <p>
+                    <label for="mail">Your Email</label>
+                    <input type="mail" id="mail" placeholder="Enter Your mail" required>
+                </p>
+                <p>
+                    <label for="password">Your Password</label>
+                    <input type="password" id="password" placeholder="at least 8 characters" required>
+                </p>
+                <p>
+                    <input type="submit" id="submit" value="Create Account" >
+                </p>
+            </form>
+        </main>
+        <footer class="signup-footer">
+            <p>Already have an Account? <a href="#">Login</a></p>
+
+
+        </footer>
+    </div>
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+   </div>
+</body>
+</html>
